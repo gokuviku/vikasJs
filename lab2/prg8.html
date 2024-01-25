@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-stone-800 text-slate-100">
+    <script>
+      let sal = parseInt(prompt("enter salary"));
+
+      if (sal >= 1000 && sal <= 5000) {
+        sal = sal + 1000;
+        document.write("new salary is:" + sal);
+      } else if (sal > 5000 && sal <= 10000) {
+        sal = sal + 2000;
+        document.write("new salary is:" + sal);
+      } else if (sal > 10000 && sal <= 20000) {
+        sal = sal + 3000;
+        document.write("new salary is:" + sal);
+      } else if (sal > 20000 && sal <= 50000) {
+        sal = sal + 4000;
+        document.write("new salary is:" + sal);
+      } else {
+          document.write(
+            "your salary is either too low or too high ,range is 1000 to 50000 :<br/>you entered :",' ',sal)
+        }
+      
+    </script>
+  </body>
+</html>

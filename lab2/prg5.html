@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-stone-800 text-slate-100 ">
+   <script>
+    let unit=parseInt(prompt("enter electricity units : "))
+    let bill,addcharge
+    if(unit<=50){
+        bill=unit*0.5
+    }else if(unit>50&&unit<=151){
+        bill=25+(unit-50)*.75
+    }else if(unit>151&&unit<=251){
+        bill=100+(unit-150)*1.2
+    }else if(unit>251){
+        bill=220+(unit-250)*1.5
+    }
+    addcharge=bill*0.2
+    bill+=addcharge
+    document.write("your bill is",bill)
+   </script>
+</body>
+</html>

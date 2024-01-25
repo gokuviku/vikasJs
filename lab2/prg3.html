@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  </head>
+  <body class="bg-stone-800 text-slate-100 ">
+    <h1>maximum out of four using nested if</h1>
+    <script>
+      let inp1 = prompt("enter val1:");
+      let inp2 = prompt("enter val2:");
+      let inp3 = prompt("enter val3:");
+      let inp4 = prompt("enter val4:");
+
+      if (inp1 > inp2) {
+            if(inp1>inp3){
+                if(inp1>inp4){
+                    document.write("value 1 is max :"+inp1)
+                }else{
+                    document.write("value 4 is max :"+inp4)
+                }
+            }if(inp3>inp4){
+                document.write("Value 3 is Max:"+inp3)
+            }else{
+                document.write("Value 4 is Max:"+inp4)
+            }
+      }else {
+        if(inp2>inp3){
+            if(inp2>inp4){
+                document.write("value 2 is maximum :"+inp2)
+            }else{
+                document.write("value 4 is maximum :"+inp4)
+            }
+        }else{
+            document.write("Value 3 is maximum : "+inp3)
+        }
+      }
+    </script>
+  </body>
+</html>
