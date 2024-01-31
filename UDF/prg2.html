@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-stone-800 text-slate-100 text-center m-5 p-5">
+    <h1 class="italic text-center m-5 p-5">hello</h1>
+
+    <script>
+      let circle = parseFloat(prompt("enter for circle :"));
+      let ans = (circle) => circle*3.14*3.14;
+      document.write("<br><br>area of circle pi*r*r = : ", ans(circle));
+
+      let rectangle1 = parseFloat(prompt("enter for rectangle1 height :"));
+      let rectangle2 = parseFloat(prompt("enter for rectangle2 width :"));
+      ans = (rectangle1,rectangle2) => rectangle1*rectangle2;
+      document.write("<br><br>area of rectangle is l*w = : ", ans(rectangle1,rectangle2));
+
+      let triangle1 = parseFloat(prompt("enter for triangle height :"));
+      let triangle2 = parseFloat(prompt("enter for triangle base :"));
+      ans = (triangle1,triangle2) => .5*triangle1*triangle2;
+      document.write("<br><br>area of triangle is 0.5*l*b = : ", ans(triangle1,triangle2));
+
+    </script>
+  </body>
+</html>
