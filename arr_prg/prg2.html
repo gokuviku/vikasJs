@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-stone-800 text-[4vw] text-slate-100 text-center m-5 p-5">
+    <h1 class="italic  text-center m-5 p-5">hello</h1>
+
+    <script>
+        let arr_num = [];
+        let inp1 = prompt("enter any numbers,sperated by comma:");
+        let inp_value = inp1.split(","); //splitting with comma using inbuilt func
+
+        inp_value.forEach(function (inp1){ //iterating foreach , which is specially for array
+            let numeric_value=parseFloat(inp1)
+            arr_num.push(numeric_value);
+        })
+        
+        document.writeln("<br>array with forEach is : ", arr_num);
+
+    </script>
+</body>
+
+</html>
