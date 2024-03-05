@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+    <center>
+      <div class="bg">
+      <input type="text " name=no id="no"><br>
+      <div class="calc-container">
+      <div class="">
+        <button onclick="addData('1')">1</button>
+        <button onclick="addData('2')">2</button>
+        <button onclick="addData('3')">3</button><br>
+      </div>
+      <div class="">
+        <button onclick="addData('4')">4</button>
+        <button onclick="addData('5')">5</button>
+        <button onclick="addData('6')">6</button><br>
+      </div>
+      <div class="">
+        <button onclick="addData('7')">7</button>
+        <button onclick="addData('8')">8</button>
+        <button onclick="addData('9')">9</button><br>
+      </div>
+      <div class="">
+        <button onclick="addData('+')">+</button>
+        <button onclick="addData('-')">-</button>
+        <button onclick="addData('*')">*</button><br>
+      </div>
+      <div class="">
+        <button onclick="addData('/')">/</button>
+        <button onclick="getAns()">=</button>
+        <button onclick="remData()">clsr</button>
+      </div>
+    </div>
+  </div>
+    </center>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
