@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // Function with a default argument and assigned default value
+        //NOTE i said arguement , not parameter.
+        function greet(name = "admin") {
+            document.writeln
+                ("<br/><br/>","Hello, " + name + "!");
+        }
+
+        // Calling function without argument
+        greet();
+
+        // Calling the function with an argument,override the default value
+        greet("user");
+        greet("visitor");
+
+
+    </script>
+</body>
+
+</html>

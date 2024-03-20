@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 1) create object of user & includes members as follow
+property -- username,surname,age,salary
+qualification includes 10th,12th,bca,mca using array
+method - display() to print all information about user. -->
+    <script>
+        class User {
+            constructor(username, surname, age, salary, qualification) {
+                this.username = username;
+                this.surname = surname;
+                this.age = age;
+                this.salary = salary;
+                this.qualification = qualification;
+            }
+            display() {
+                document.writeln("<br>","username :", this.username, "<br />", "surname : ", this.surname, "<br />", "age : ", this.age, "<br />",
+                    "salary : ", this.salary, "<br>",);
+                document.write("Qualifications: ");
+                this.qualification.forEach(elem => {
+                    document.write(elem, " ");
+                });
+            }
+        }
+
+        obj1 = new User();
+        obj1.username = "vikas";
+        obj1.surname = "soni";
+        obj1.age = 25;
+        obj1.salary = "$400000";
+        obj1.qualification = ["10th", "12th", "bca", "mca"];
+        obj1.display();
+
+        //second object 
+        obj2 = new User();
+        obj2.username = "vikku";
+        obj2.surname = "developer";
+        obj2.age = 22;
+        obj2.salary = "$200000";
+        obj2.qualification = ["10th", "12th", "bca", "mca"];
+        obj2.display();
+
+    </script>
+</body>
+
+</html>
